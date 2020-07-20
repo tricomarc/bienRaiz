@@ -1,0 +1,146 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    height: 170px;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 600px; /* Should be removed. Only for demonstration */
+}
+
+/* Left and right column */
+.column.side {
+    width: 10%;
+    height: 80%;
+}
+
+/* Middle column */
+.column.middle {
+    width: 80%;
+    height: 80%;
+}
+
+.col-cont{
+     width: 25%;
+    float: right;
+    right: 450px;
+    width: 60%;
+}
+
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.rowCon{
+    
+     margin-left:10%;
+     margin-right:10%;
+}
+
+
+.footer {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    font-style: normal;
+    
+}
+
+
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+.banner.imagen {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    width: 250px;
+    height: 180px;
+    padding: 10px;
+}
+
+.banner.texto {
+    position: absolute;
+    top: 50px;
+    left: 28%;
+    text-align: left;
+    font-family: cursive;
+    font-family: sans-serif;
+    font-style: normal;
+    color: #198eb1;
+}
+
+
+
+ul, ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    background-color: #fbfbfb;
+    height: 5%; /* Full height */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+    
+}
+
+
+    
+ .login {
+    padding: 5px;
+    position: absolute;
+    top: 15%;
+    right: 20%;
+    font-family: sans-serif;
+    font-size: 50%;
+} 
+
+.imgPrin {
+    width: 70%;
+    height: auto;
+    display:block;
+margin:auto;
+}
+
+.error.imagen {
+    position: relative;
+    left: 25%;
+    right: 25%;
+    padding: 10px;
+}
+
+.col-25 {
+    float: left;
+    margin-left: 6%;
+    width: 25%;
+    margin-top: 6px;
+    font-family: sans-serif;
+    font-size: 120%;
+    font-style: oblique;
+}
